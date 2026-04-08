@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        
+        /* Heritage color palette - warm, earthy tones */
+        --heritage-dark: 0.35 0.08 40;
+        --heritage-darker: 0.25 0.08 40;
+        --heritage-medium: 0.55 0.08 40;
+        --heritage-light: 0.85 0.05 40;
+        --heritage-lighter: 0.95 0.03 40;
+        
+        /* Base colors */
+        --background: 0.98 0.01 40;
+        --foreground: 0.20 0.05 40;
+        
+        /* Card colors */
+        --card: 1 0 0;
+        --card-foreground: 0.20 0.05 40;
+        
+        /* Popover colors */
+        --popover: 1 0 0;
+        --popover-foreground: 0.20 0.05 40;
+        
+        /* Primary colors - heritage brown */
+        --primary: 0.35 0.08 40;
+        --primary-foreground: 0.98 0.01 40;
+        
+        /* Secondary colors */
+        --secondary: 0.90 0.03 40;
+        --secondary-foreground: 0.25 0.08 40;
+        
+        /* Muted colors */
+        --muted: 0.92 0.02 40;
+        --muted-foreground: 0.50 0.05 40;
+        
+        /* Accent colors */
+        --accent: 0.88 0.04 40;
+        --accent-foreground: 0.25 0.08 40;
+        
+        /* Destructive colors */
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.98 0.01 40;
+        
+        /* Border and input */
+        --border: 0.88 0.03 40;
+        --input: 0.88 0.03 40;
+        --ring: 0.55 0.08 40;
+        
+        /* Chart colors - heritage palette */
+        --chart-1: 0.55 0.12 35;
+        --chart-2: 0.60 0.10 50;
+        --chart-3: 0.50 0.08 25;
+        --chart-4: 0.65 0.09 60;
+        --chart-5: 0.58 0.11 45;
+        
+        /* Sidebar colors */
+        --sidebar: 0.98 0.01 40;
+        --sidebar-foreground: 0.20 0.05 40;
+        --sidebar-primary: 0.35 0.08 40;
+        --sidebar-primary-foreground: 0.98 0.01 40;
+        --sidebar-accent: 0.90 0.03 40;
+        --sidebar-accent-foreground: 0.25 0.08 40;
+        --sidebar-border: 0.88 0.03 40;
+        --sidebar-ring: 0.55 0.08 40;
+    }
+
+    .dark {
+        --background: 0.18 0.05 40;
+        --foreground: 0.95 0.02 40;
+        
+        --card: 0.22 0.06 40;
+        --card-foreground: 0.95 0.02 40;
+        
+        --popover: 0.25 0.06 40;
+        --popover-foreground: 0.95 0.02 40;
+        
+        --primary: 0.75 0.06 40;
+        --primary-foreground: 0.20 0.05 40;
+        
+        --secondary: 0.30 0.06 40;
+        --secondary-foreground: 0.95 0.02 40;
+        
+        --muted: 0.28 0.06 40;
+        --muted-foreground: 0.65 0.04 40;
+        
+        --accent: 0.40 0.07 40;
+        --accent-foreground: 0.95 0.02 40;
+        
+        --destructive: 0.60 0.20 25;
+        --destructive-foreground: 0.20 0.05 40;
+        
+        --border: 0.95 0.02 40 / 12%;
+        --input: 0.95 0.02 40 / 18%;
+        --ring: 0.55 0.06 40;
+        
+        --chart-1: 0.55 0.15 35;
+        --chart-2: 0.65 0.12 50;
+        --chart-3: 0.60 0.10 25;
+        --chart-4: 0.70 0.11 60;
+        --chart-5: 0.62 0.13 45;
+        
+        --sidebar: 0.22 0.06 40;
+        --sidebar-foreground: 0.95 0.02 40;
+        --sidebar-primary: 0.75 0.06 40;
+        --sidebar-primary-foreground: 0.20 0.05 40;
+        --sidebar-accent: 0.30 0.06 40;
+        --sidebar-accent-foreground: 0.95 0.02 40;
+        --sidebar-border: 0.95 0.02 40 / 12%;
+        --sidebar-ring: 0.50 0.06 40;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+@layer utilities {
+    .text-heritage-dark {
+        color: oklch(var(--heritage-dark));
+    }
+    
+    .text-heritage-darker {
+        color: oklch(var(--heritage-darker));
+    }
+    
+    .text-heritage-medium {
+        color: oklch(var(--heritage-medium));
+    }
+    
+    .text-heritage-light {
+        color: oklch(var(--heritage-light));
+    }
+    
+    .bg-heritage-dark {
+        background-color: oklch(var(--heritage-dark));
+    }
+    
+    .bg-heritage-darker {
+        background-color: oklch(var(--heritage-darker));
+    }
+    
+    .bg-heritage-medium {
+        background-color: oklch(var(--heritage-medium));
+    }
+    
+    .bg-heritage-light {
+        background-color: oklch(var(--heritage-light));
+    }
+    
+    .bg-heritage-lighter {
+        background-color: oklch(var(--heritage-lighter));
+    }
+    
+    .border-heritage-dark {
+        border-color: oklch(var(--heritage-dark));
+    }
+    
+    .border-heritage-medium {
+        border-color: oklch(var(--heritage-medium));
+    }
+    
+    .border-heritage-light {
+        border-color: oklch(var(--heritage-light));
+    }
+}

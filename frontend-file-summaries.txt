@@ -1,0 +1,16 @@
+{
+  "frontend/src/App.tsx": "Main application component that handles authentication flow, profile setup, and renders the home page with theme provider and toast notifications.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for all backend operations including photo and video upload mutations that properly handle ExternalBlob creation, send files to uploadPhoto and uploadVideo endpoints, include enhanced error handling with Hungarian messages, and manage query invalidation.",
+  "frontend/src/pages/LoginPage.tsx": "Hungarian-language login page featuring the Paur logo, heritage tree image, and Internet Identity authentication.",
+  "frontend/src/pages/HomePage.tsx": "Main home page with four navigation cards (Photos, Videos, Recipes, Albums) featuring the family tree and logo, with section routing for the family journal application.",
+  "frontend/src/components/Header.tsx": "Application header with Paur logo, user profile display, and logout functionality.",
+  "frontend/src/components/Footer.tsx": "Footer component with copyright notice and caffeine.ai attribution with heart icon.",
+  "frontend/src/components/ProfileSetupModal.tsx": "Modal dialog for first-time user profile setup requiring name input.",
+  "frontend/src/components/PhotosSection.tsx": "Hungarian-language photo management interface with upload button that triggers file selection, converts files to ExternalBlob, sends to backend's uploadPhoto endpoint with visible loading feedback (spinner and progress percentage), displays Hungarian success/error messages, and includes drag-and-drop reordering, album assignment, and full-featured lightbox viewer with keyboard navigation.",
+  "frontend/src/components/VideosSection.tsx": "Hungarian-language video management interface with upload button that triggers file selection, converts files to ExternalBlob, sends to backend's uploadVideo endpoint with visible loading feedback (spinner and progress percentage), displays Hungarian success/error messages, fetches actual bytes from ExternalBlob storage for reliable HTML5 video playback, and includes drag-and-drop reordering functionality.",
+  "frontend/src/components/AlbumsSection.tsx": "Album management interface with create, view, and delete functionality, displaying albums in a grid layout with Hungarian-language labels and heritage-inspired design.",
+  "frontend/src/index.css": "Global styles with heritage-themed OKLCH color system featuring warm, earthy brown tones for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with heritage color palette utilities for the family website theme.",
+  "frontend/src/components/MemoriesSection.tsx": "Placeholder component for the Memories section displaying a \"coming soon\" message with feature descriptions in Hungarian.",
+  "frontend/src/components/RecipesSection.tsx": "Placeholder component for the Recipes section displaying a \"coming soon\" message with feature descriptions in Hungarian."
+}
